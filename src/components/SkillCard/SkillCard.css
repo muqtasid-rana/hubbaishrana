@@ -1,0 +1,134 @@
+.skill-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    border: var(--border-subtle);
+    transition: all var(--transition-base);
+    cursor: default;
+}
+
+.skill-card:hover {
+    background: var(--bg-card-hover);
+    border-color: rgba(79, 70, 229, 0.3);
+    box-shadow: var(--shadow-sm), 0 0 20px rgba(79, 70, 229, 0.1);
+}
+
+.skill-icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-subtle);
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+}
+
+.skill-icon {
+    font-size: 1.25rem;
+    color: var(--primary-light);
+    transition: all var(--transition-base);
+    z-index: 1;
+}
+
+.skill-card:hover .skill-icon {
+    color: var(--text-primary);
+    transform: scale(1.1);
+}
+
+.skill-icon-glow {
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-primary);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.skill-card:hover .skill-icon-glow {
+    opacity: 0.3;
+}
+
+.skill-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: color var(--transition-base);
+}
+
+.skill-card:hover .skill-text {
+    color: var(--text-primary);
+}
+
+/* ========================================
+   RESPONSIVE - Tablet (1024px and below)
+   ======================================== */
+@media (max-width: 1024px) {
+    .skill-card {
+        padding: 16px 20px;
+        gap: 14px;
+    }
+
+    .skill-icon-wrapper {
+        width: 44px;
+        height: 44px;
+    }
+
+    .skill-icon {
+        font-size: 1.1rem;
+    }
+
+    .skill-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - Mobile Large (768px and below)
+   ======================================== */
+@media (max-width: 768px) {
+    .skill-card {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .skill-icon-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-icon {
+        font-size: 1rem;
+    }
+
+    .skill-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - Mobile (480px and below)
+   ======================================== */
+@media (max-width: 480px) {
+    .skill-card {
+        padding: 12px 14px;
+        gap: 10px;
+    }
+
+    .skill-icon-wrapper {
+        width: 36px;
+        height: 36px;
+    }
+
+    .skill-icon {
+        font-size: 0.9rem;
+    }
+
+    .skill-text {
+        font-size: 0.8rem;
+    }
+}

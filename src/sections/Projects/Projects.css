@@ -1,0 +1,396 @@
+.projects {
+    background: var(--bg-dark);
+}
+
+/* Featured Projects */
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+/* Play Store Feature */
+.playstore-feature {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 50px;
+    background: var(--bg-card);
+    border-radius: var(--radius-xl);
+    border: 2px solid rgba(79, 70, 229, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.playstore-feature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+}
+
+.playstore-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #34D399;
+    background: rgba(52, 211, 153, 0.1);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    margin-bottom: 16px;
+}
+
+.playstore-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.playstore-content>p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.playstore-case-study {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.case-item h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.case-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.playstore-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.tech-badge {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    border-radius: var(--radius-sm);
+}
+
+.playstore-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playstore-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.playstore-placeholder {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-icon {
+    font-size: 5rem;
+    opacity: 0.5;
+}
+
+/* Other Projects Header */
+.other-projects-header,
+.small-projects-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.other-projects-header h3,
+.small-projects-header h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.other-projects-header p {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.small-projects-header {
+    margin-top: 60px;
+}
+
+/* Project Grids */
+.other-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.small-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ========================================
+   RESPONSIVE - Tablet (1024px and below)
+   ======================================== */
+@media (max-width: 1024px) {
+    .featured-projects {
+        gap: 32px;
+        margin-bottom: 60px;
+    }
+
+    .playstore-feature {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 36px;
+        margin-bottom: 60px;
+    }
+
+    .playstore-image {
+        order: -1;
+    }
+
+    .playstore-content h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .playstore-content>p {
+        text-align: center;
+    }
+
+    .playstore-badge {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 16px;
+    }
+
+    .playstore-tech {
+        justify-content: center;
+    }
+
+    .playstore-case-study {
+        text-align: center;
+    }
+
+    .other-projects-grid {
+        gap: 20px;
+    }
+
+    .small-projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .other-projects-header h3,
+    .small-projects-header h3 {
+        font-size: 1.35rem;
+    }
+
+    .small-projects-header {
+        margin-top: 50px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - Mobile Large (768px and below)
+   ======================================== */
+@media (max-width: 768px) {
+    .featured-projects {
+        margin-bottom: 50px;
+    }
+
+    .playstore-feature {
+        padding: 28px;
+        gap: 32px;
+        margin-bottom: 50px;
+        border-radius: var(--radius-lg);
+    }
+
+    .playstore-content h3 {
+        font-size: 1.35rem;
+    }
+
+    .playstore-content>p {
+        font-size: 0.95rem;
+    }
+
+    .playstore-badge {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+
+    .playstore-case-study {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .case-item h4 {
+        font-size: 0.75rem;
+    }
+
+    .case-item p {
+        font-size: 0.85rem;
+    }
+
+    .tech-badge {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+
+    .playstore-image img,
+    .playstore-placeholder {
+        max-width: 250px;
+    }
+
+    .app-icon {
+        font-size: 4rem;
+    }
+
+    .other-projects-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .small-projects-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .other-projects-header h3,
+    .small-projects-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .other-projects-header p {
+        font-size: 0.9rem;
+    }
+
+    .other-projects-header,
+    .small-projects-header {
+        margin-bottom: 32px;
+    }
+
+    .small-projects-header {
+        margin-top: 40px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - Mobile (480px and below)
+   ======================================== */
+@media (max-width: 480px) {
+    .featured-projects {
+        margin-bottom: 40px;
+    }
+
+    .playstore-feature {
+        padding: 20px;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .playstore-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .playstore-content>p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .playstore-badge {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+
+    .playstore-case-study {
+        gap: 14px;
+        margin-bottom: 20px;
+    }
+
+    .case-item h4 {
+        font-size: 0.7rem;
+        margin-bottom: 4px;
+    }
+
+    .case-item p {
+        font-size: 0.8rem;
+    }
+
+    .playstore-tech {
+        gap: 6px;
+        margin-bottom: 20px;
+    }
+
+    .tech-badge {
+        font-size: 0.65rem;
+        padding: 3px 8px;
+    }
+
+    .playstore-image img,
+    .playstore-placeholder {
+        max-width: 200px;
+    }
+
+    .app-icon {
+        font-size: 3rem;
+    }
+
+    .other-projects-header h3,
+    .small-projects-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .other-projects-header p {
+        font-size: 0.85rem;
+    }
+
+    .other-projects-header,
+    .small-projects-header {
+        margin-bottom: 24px;
+    }
+
+    .small-projects-header {
+        margin-top: 32px;
+    }
+}

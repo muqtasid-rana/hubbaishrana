@@ -1,0 +1,113 @@
+import { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import Button from '../../components/Button/Button';
+import './Header.css';
+
+const navLinks = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'services', label: 'Services' },
+    { id: 'contact', label: 'Contact' }
+];
+
+const Header = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        setIsMobileMenuOpen(false);
+    };
+
+    return (
+        <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
+            <div className="header-container">
+                <a
+                    href="#home"
+                    className="logo"
+                    onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
+                >
+                    <span className="logo-text">M</span>
+                    <span className="logo-dot">.</span>
+                </a>
+
+                <nav className="nav-desktop">
+                    {navLinks.map((link, index) => (
+                        <a
+                            key={link.id}
+                            href={`#${link.id}`}
+                            className="nav-link"
+                            onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }}
+                            style={{ animationDelay: `${index * 0.05}s` }}
+                        >
+                            {link.label}
+                            <span className="nav-link-indicator"></span>
+                        </a>
+                    ))}
+                </nav>
+
+                <div className="header-actions">
+                    <Button
+                        href="https://calendly.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="sm"
+                        className="header-cta"
+                    >
+                        Book a Free Meeting
+                    </Button>
+
+                    <button
+                        className="mobile-menu-toggle"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        aria-label="Toggle menu"
+                    >
+                        {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+                    </button>
+                </div>
+            </div>
+
+            {/* Mobile Menu */}
+            {isMobileMenuOpen && (
+                <nav className="nav-mobile">
+                    {navLinks.map((link, index) => (
+                        <a
+                            key={link.id}
+                            href={`#${link.id}`}
+                            className="nav-link-mobile"
+                            onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }}
+                            style={{ animationDelay: `${index * 0.05}s` }}
+                        >
+                            {link.label}
+                        </a>
+                    ))}
+                    <Button
+                        href="https://calendly.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="md"
+                        className="mobile-cta"
+                    >
+                        Book a Free Meeting
+                    </Button>
+                </nav>
+            )}
+        </header>
+    );
+};
+
+export default Header;

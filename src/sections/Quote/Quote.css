@@ -1,0 +1,174 @@
+.quote {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.quote-background {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f0a1f 0%, #1a0a2e 50%, #0a0a1a 100%);
+}
+
+.quote-gradient-1 {
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.15) 0%, transparent 60%);
+}
+
+.quote-gradient-2 {
+    position: absolute;
+    bottom: -30%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 60%);
+}
+
+.quote-container {
+    position: relative;
+    z-index: 1;
+}
+
+.quote-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quote-mark {
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.3;
+    margin-bottom: -40px;
+}
+
+blockquote p {
+    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+cite {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--primary-light);
+}
+
+/* ========================================
+   RESPONSIVE - Tablet (1024px and below)
+   ======================================== */
+@media (max-width: 1024px) {
+    .quote {
+        padding: 100px 0;
+    }
+
+    .quote-content {
+        max-width: 750px;
+        padding: 0 24px;
+    }
+
+    .quote-mark {
+        font-size: 6rem;
+        margin-bottom: -35px;
+    }
+
+    blockquote p {
+        margin-bottom: 28px;
+    }
+
+    cite {
+        font-size: 0.95rem;
+    }
+
+    .quote-gradient-1 {
+        width: 500px;
+        height: 500px;
+    }
+
+    .quote-gradient-2 {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - Mobile Large (768px and below)
+   ======================================== */
+@media (max-width: 768px) {
+    .quote {
+        padding: 80px 0;
+    }
+
+    .quote-content {
+        padding: 0 20px;
+    }
+
+    .quote-mark {
+        font-size: 5rem;
+        margin-bottom: -30px;
+    }
+
+    blockquote p {
+        margin-bottom: 24px;
+        line-height: 1.45;
+    }
+
+    cite {
+        font-size: 0.9rem;
+    }
+
+    .quote-gradient-1 {
+        width: 400px;
+        height: 400px;
+        left: -30%;
+    }
+
+    .quote-gradient-2 {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - Mobile (480px and below)
+   ======================================== */
+@media (max-width: 480px) {
+    .quote {
+        padding: 60px 0;
+    }
+
+    .quote-content {
+        padding: 0 16px;
+    }
+
+    .quote-mark {
+        font-size: 4rem;
+        margin-bottom: -25px;
+    }
+
+    blockquote p {
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    cite {
+        font-size: 0.85rem;
+    }
+
+    .quote-gradient-1,
+    .quote-gradient-2 {
+        display: none;
+    }
+}
