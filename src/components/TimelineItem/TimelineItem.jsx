@@ -15,10 +15,10 @@ const TimelineItem = ({ item, index = 0, isLast = false }) => {
             <div className="timeline-content">
                 <div className="timeline-header">
                     <span className={`timeline-type timeline-type-${type}`}>
-                        {type === 'startup' ? '🚀 Startup' :
-                            type === 'work' ? '💼 Work' :
-                                type === 'freelance' ? '🎯 Freelance' :
-                                    '🎓 Education'}
+                        {type === 'startup' ? 'Startup' :
+                            type === 'work' ? 'Work' :
+                                type === 'freelance' ? 'Freelance' :
+                                    'Education'}
                     </span>
                     <span className="timeline-duration">{duration}</span>
                 </div>

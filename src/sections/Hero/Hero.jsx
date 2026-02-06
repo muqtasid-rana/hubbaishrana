@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn, FaGithub, FaYoutube } from 'react-icons/fa';
 import Button from '../../components/Button/Button';
 import './Hero.css';
 
@@ -49,7 +49,7 @@ const Hero = () => {
 
                     <div className="hero-actions fade-in-up" style={{ animationDelay: '0.5s' }}>
                         <Button
-                            href="https://calendly.com"
+                            href="https://calendly.com/mmuqtasidrana/30min"
                             target="_blank"
                             rel="noopener noreferrer"
                             size="lg"
@@ -59,7 +59,7 @@ const Hero = () => {
 
                         <div className="hero-socials">
                             <a
-                                href="https://instagram.com"
+                                href="https://instagram.com/muqtasid_devvv"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"
@@ -68,7 +68,7 @@ const Hero = () => {
                                 <FaInstagram />
                             </a>
                             <a
-                                href="https://linkedin.com"
+                                href="https://linkedin.comin/muqtasid-rana"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"
@@ -77,13 +77,23 @@ const Hero = () => {
                                 <FaLinkedinIn />
                             </a>
                             <a
-                                href="https://github.com"
+                                href="https://github.com/muqtasid-rana"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"
                                 aria-label="GitHub"
                             >
                                 <FaGithub />
+                            </a>
+                            <a
+                                href="https://youtube.com/@muqtasidrana"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-link"
+
+                                aria-label="YouTube"
+                            >
+                                <FaYoutube />
                             </a>
                         </div>
                     </div>

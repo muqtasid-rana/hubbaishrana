@@ -14,7 +14,7 @@ const Workshops = () => {
                 {/* Workshops Conducted */}
                 <div className="workshops-category">
                     <h3 className="category-heading">
-                        <span className="heading-icon">🎤</span>
+                        <span className="heading-icon"></span>
                         Workshops I Conducted
                     </h3>
                     <div className="workshops-grid conducted-grid">
@@ -44,7 +44,7 @@ const Workshops = () => {
                 {/* Workshops Attended */}
                 <div className="workshops-category">
                     <h3 className="category-heading">
-                        <span className="heading-icon">🎓</span>
+                        <span className="heading-icon"></span>
                         Events I Attended
                     </h3>
                     <div className="workshops-grid attended-grid">

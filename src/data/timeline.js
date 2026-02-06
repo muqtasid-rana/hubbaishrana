@@ -11,6 +11,16 @@ export const timeline = [
     },
     {
         id: 2,
+        title: 'Flutter App Developer - Intern',
+        subtitle: 'Devspire Solutions',
+        institution: 'Peshawar',
+        duration: 'Nov 2025 – Jan 2026',
+        description: 'Developed and maintained cross-platform mobile applications using Flutter & Firebase. Applied industry-standard practices including MVVM architecture, Firebase Auth, Firestore, Storage, Cloud Functions, and AdMob integration.',
+        type: 'work',
+        current: true
+    },
+    {
+        id: 3,
         title: 'Founder & Lead Developer',
         subtitle: 'Incorpo - SaaS Startup',
         institution: 'Self Employed',
@@ -20,7 +30,7 @@ export const timeline = [
         current: true
     },
     {
-        id: 3,
+        id: 4,
         title: 'Mobile App Development Internship',
         subtitle: 'Under Senior Developer Moiz Altaf',
         institution: 'Professional Training',
@@ -29,7 +39,7 @@ export const timeline = [
         type: 'work'
     },
     {
-        id: 4,
+        id: 5,
         title: 'Freelance Developer & Personal Projects',
         subtitle: 'Self-Directed Learning',
         institution: 'Independent',

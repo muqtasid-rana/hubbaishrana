@@ -9,6 +9,9 @@ const navLinks = [
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'services', label: 'Services' },
+    { id: 'achievements', label: 'Achievements' },
+    { id: 'workshops', label: 'Workshops' },
+    { id: 'certificates', label: 'Certificates' },
     { id: 'contact', label: 'Contact' }
 ];
 
@@ -36,33 +39,33 @@ const Header = () => {
     return (
         <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
             <div className="header-container">
-                <a
-                    href="#home"
-                    className="logo"
-                    onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
-                >
-                    <span className="logo-text">M</span>
-                    <span className="logo-dot">.</span>
-                </a>
-
                 <nav className="nav-desktop">
-                    {navLinks.map((link, index) => (
-                        <a
-                            key={link.id}
-                            href={`#${link.id}`}
-                            className="nav-link"
-                            onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }}
-                            style={{ animationDelay: `${index * 0.05}s` }}
-                        >
-                            {link.label}
-                            <span className="nav-link-indicator"></span>
-                        </a>
-                    ))}
-                </nav>
+                    <a
+                        href="#home"
+                        className="logo"
+                        onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
+                    >
+                        <span className="logo-text">M</span>
+                        <span className="logo-dot">.</span>
+                    </a>
 
-                <div className="header-actions">
+                    <div className="nav-links">
+                        {navLinks.map((link, index) => (
+                            <a
+                                key={link.id}
+                                href={`#${link.id}`}
+                                className="nav-link"
+                                onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }}
+                                style={{ animationDelay: `${index * 0.05}s` }}
+                            >
+                                {link.label}
+                                <span className="nav-link-indicator"></span>
+                            </a>
+                        ))}
+                    </div>
+
                     <Button
-                        href="https://calendly.com"
+                        href="https://calendly.com/mmuqtasidrana/30min"
                         target="_blank"
                         rel="noopener noreferrer"
                         size="sm"
@@ -70,7 +73,19 @@ const Header = () => {
                     >
                         Book a Free Meeting
                     </Button>
+                </nav>
 
+                {/* Mobile Logo */}
+                <a
+                    href="#home"
+                    className="logo-mobile"
+                    onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
+                >
+                    <span className="logo-text">M</span>
+                    <span className="logo-dot">.</span>
+                </a>
+
+                <div className="header-actions-mobile">
                     <button
                         className="mobile-menu-toggle"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

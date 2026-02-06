@@ -14,7 +14,7 @@ const Footer = () => {
 
                     <div className="footer-socials">
                         <a
-                            href="https://linkedin.com"
+                            href="https://linkedin.comin/muqtasid-rana"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
@@ -22,7 +22,7 @@ const Footer = () => {
                             <FaLinkedinIn />
                         </a>
                         <a
-                            href="https://github.com"
+                            href="https://github.com/muqtasid-rana"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub"
@@ -30,7 +30,7 @@ const Footer = () => {
                             <FaGithub />
                         </a>
                         <a
-                            href="https://instagram.com"
+                            href="https://instagram.com/muqtasid_devvv"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Instagram"
@@ -38,7 +38,7 @@ const Footer = () => {
                             <FaInstagram />
                         </a>
                         <a
-                            href="https://youtube.com"
+                            href="https://youtube.com/@muqtasidrana"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="YouTube"
@@ -54,9 +54,7 @@ const Footer = () => {
                     <p className="footer-copyright">
                         © {currentYear} M.Muqtasid Rana. All rights reserved.
                     </p>
-                    <p className="footer-made">
-                        Made with <FaHeart className="heart-icon" /> in Pakistan
-                    </p>
+
                 </div>
             </div>
         </footer>

@@ -12,11 +12,11 @@ import Button from '../../components/Button/Button';
 import './Contact.css';
 
 const socialLinks = [
-    { icon: FaLinkedinIn, label: 'LinkedIn', href: 'https://linkedin.com', color: '#0A66C2' },
-    { icon: FaGithub, label: 'GitHub', href: 'https://github.com', color: '#FFFFFF' },
-    { icon: FaInstagram, label: 'Instagram', href: 'https://instagram.com', color: '#E4405F' },
-    { icon: FaYoutube, label: 'YouTube', href: 'https://youtube.com', color: '#FF0000' },
-    { icon: FaTwitter, label: 'Twitter/X', href: 'https://twitter.com', color: '#1DA1F2' }
+    { icon: FaLinkedinIn, label: 'LinkedIn', href: 'https://linkedin.com/in/muqtasid-rana', color: '#0A66C2' },
+    { icon: FaGithub, label: 'GitHub', href: 'https://github.com/muqtasid-rana', color: '#FFFFFF' },
+    { icon: FaInstagram, label: 'Instagram', href: 'https://instagram.com/muqtasid_devvv', color: '#E4405F' },
+    { icon: FaYoutube, label: 'YouTube', href: 'https://youtube.com/@muqtasidrana', color: '#FF0000' },
+    // { icon: FaTwitter, label: 'Twitter/X', href: 'https://twitter.com/muqtasidrana', color: '#1DA1F2' }
 ];
 
 const Contact = () => {
@@ -42,7 +42,7 @@ const Contact = () => {
                                 <FaEnvelope className="contact-icon" />
                                 <div>
                                     <span className="contact-label">Email</span>
-                                    <a href="mailto:contact@muqtasidrana.com">contact@muqtasidrana.com</a>
+                                    <a href="mailto:mmuqtasidrana@gmail.com">mmuqtasidrana@gmail.com</a>
                                 </div>
                             </div>
                             <div className="contact-item">
@@ -55,7 +55,7 @@ const Contact = () => {
                         </div>
 
                         <Button
-                            href="https://calendly.com"
+                            href="https://calendly.com/mmuqtasidrana/30min"
                             target="_blank"
                             rel="noopener noreferrer"
                             size="lg"

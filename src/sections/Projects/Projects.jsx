@@ -91,9 +91,7 @@ const Projects = () => {
                 </div>
 
                 {/* Small Projects */}
-                <div className="small-projects-header">
-                    <h3>UI/UX & Practice Projects</h3>
-                </div>
+
 
                 <div className="small-projects-grid">
                     {smallProjects.map((project, index) => (

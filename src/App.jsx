@@ -5,8 +5,10 @@ import Skills from './sections/Skills/Skills';
 import Projects from './sections/Projects/Projects';
 import Services from './sections/Services/Services';
 import Quote from './sections/Quote/Quote';
+import Achievements from './sections/Achievements/Achievements';
 import Workshops from './sections/Workshops/Workshops';
 import Timeline from './sections/Timeline/Timeline';
+import Certificates from './sections/Certificates/Certificates';
 import Contact from './sections/Contact/Contact';
 import Footer from './sections/Footer/Footer';
 import './App.css';
@@ -22,8 +24,10 @@ function App() {
         <Projects />
         <Services />
         <Quote />
+        <Achievements />
         <Workshops />
         <Timeline />
+        <Certificates />
         <Contact />
       </main>
       <Footer />

@@ -141,6 +141,15 @@
         height: 10px;
         margin: 0 10px;
     }
+
+    /* Center all section titles on mobile */
+    .section-title-left {
+        text-align: center;
+    }
+
+    .section-title-left .section-title-line {
+        justify-content: center;
+    }
 }
 
 /* ========================================

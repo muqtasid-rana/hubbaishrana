@@ -3,7 +3,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 120px 0 80px;
+    padding: 120px 120px 80px;
     overflow: hidden;
 }
 
@@ -47,9 +47,9 @@
 }
 
 .hero-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'inter', sans-serif;
     font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.1;
     margin-bottom: 16px;
     letter-spacing: -1px;
@@ -134,7 +134,7 @@
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    aspect-ratio: 16 / 9;
     border-radius: var(--radius-lg);
     overflow: hidden;
     background: var(--bg-card);
@@ -142,11 +142,9 @@
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    border: none;
 }
 
 /* Shadow Animation */
@@ -203,8 +201,17 @@
     }
 
     .hero-media {
+        display: block !important;
         max-width: 600px;
         margin: 0 auto;
+        opacity: 1;
+        order: -1;
+    }
+
+    .video-container {
+        display: block;
+        aspect-ratio: 16 / 9;
+        min-height: 280px;
     }
 
     .hero-greeting {
@@ -263,6 +270,11 @@
     .hero-actions {
         flex-direction: column;
         gap: 16px;
+        align-items: center;
+    }
+
+    .hero-roles {
+        justify-content: center;
     }
 
     .social-link {
@@ -272,7 +284,16 @@
     }
 
     .hero-media {
+        display: block !important;
         max-width: 100%;
+        opacity: 1;
+        order: -1;
+    }
+
+    .video-container {
+        display: block;
+        aspect-ratio: 16 / 9;
+        min-height: 220px;
     }
 
     .video-shadow {
@@ -324,8 +345,23 @@
         font-size: 0.95rem;
     }
 
+    .hero-media {
+        display: block !important;
+        max-width: 100%;
+        opacity: 1;
+        visibility: visible;
+        order: -1;
+    }
+
+    .video-wrapper {
+        display: block;
+    }
+
     .video-container {
+        display: block;
         border-radius: var(--radius-md);
+        aspect-ratio: 16 / 9;
+        min-height: 180px;
     }
 
     .video-shadow {

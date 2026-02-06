@@ -2,19 +2,19 @@
 export const workshopsConducted = [
     {
         id: 1,
-        title: 'Flutter Mobile App Development Workshop',
+        title: 'Mobile App Development Workshop',
         organization: 'City University App Development Society',
         date: '2025',
         description: 'Conducted a comprehensive workshop teaching students the fundamentals of Flutter development, state management, and Firebase integration.',
-        image: '/src/assets/gdg3.jpg',
+        image: '/src/assets/workshopme.jpeg',
         attendees: '50+ Students'
     },
     {
         id: 2,
-        title: 'Introduction to Mobile Development',
-        organization: 'City University',
+        title: '"How to work on a startup" at GDG event',
+        organization: 'GDG',
         date: '2025',
-        description: 'Introductory session on mobile app development career paths, technologies, and getting started with Flutter.',
+        description: 'Talk on how to work on a startup and the challenges and rewards of building a successful business.',
         image: '/src/assets/2gdg.jpg',
         attendees: '30+ Students'
     }
@@ -27,22 +27,22 @@ export const workshopsAttended = [
         organization: 'GDG',
         date: '2024',
         description: 'Attended GDG event focusing on latest Google technologies, cloud computing, and mobile development trends.',
-        image: '/src/assets/blue1-min.jpg'
+        image: '/src/assets/gdg3.jpg'
     },
     {
         id: 2,
-        title: 'Tech Innovation Summit',
-        organization: 'Tech Community',
-        date: '2024',
-        description: 'Participated in discussions about AI integration, modern software architecture, and startup ecosystem.',
-        image: '/src/assets/blue2.jpg'
+        title: 'Microsoft Learner Student Ambassedor',
+        organization: 'Microsoft',
+        date: '2025',
+        description: 'Attended Microsoft Learner Student Ambassedor event focusing on latest Microsoft technologies, cloud computing, and mobile development trends.',
+        image: '/src/assets/1.jpg'
     },
     {
         id: 3,
-        title: 'Developer Conference',
-        organization: 'Tech Community',
-        date: '2024',
+        title: 'Cyber Pashto Tech Event',
+        organization: 'Cyber Pashto Peshawar',
+        date: '2025',
         description: 'Networking event with industry professionals and learning about cutting-edge development practices.',
-        image: '/src/assets/blue3.jpg'
+        image: '/src/assets/cyber.jpeg'
     }
 ];

@@ -27,17 +27,7 @@ const services = [
             'Database Design'
         ]
     },
-    {
-        icon: FaVideo,
-        title: 'Content Creation',
-        description: 'Sharing knowledge and insights through engaging tech content, tutorials, and development journey documentation on social platforms.',
-        features: [
-            'Tech Tutorials',
-            'Development Insights',
-            'Social Media Content',
-            'Community Building'
-        ]
-    },
+
     {
         icon: FaPaintBrush,
         title: 'UI/UX Design',
@@ -73,7 +63,7 @@ const Services = () => {
                 <div className="services-cta">
                     <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
                     <Button
-                        href="https://calendly.com"
+                        href="https://calendly.com/mmuqtasidrana/30min"
                         target="_blank"
                         rel="noopener noreferrer"
                         size="lg"

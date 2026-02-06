@@ -152,6 +152,12 @@
         width: 100%;
     }
 
+    .contact-info .btn {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
     .social-section h4 {
         text-align: center;
     }
@@ -231,6 +237,14 @@
         gap: 32px;
     }
 
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
     .contact-info h3 {
         font-size: 1.2rem;
     }
@@ -247,9 +261,9 @@
     }
 
     .contact-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
     }
 
     .contact-item {

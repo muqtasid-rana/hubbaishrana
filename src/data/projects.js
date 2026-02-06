@@ -42,7 +42,7 @@ export const playStoreApp = {
         techStack: ['Flutter', 'Firebase', 'Local Database', 'REST APIs', 'Google Ads (Banner only)'],
         result: 'Currently in Early Access on PlayStore with positive user feedback.'
     },
-    playStoreUrl: '#',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.groflex.muslimone',
     tags: ['Published', 'PlayStore', 'Flutter']
 };
 
