@@ -167,8 +167,17 @@ cite {
         font-size: 0.85rem;
     }
 
-    .quote-gradient-1,
+    .quote-gradient-1 {
+        width: 250px;
+        height: 250px;
+        left: -15%;
+        top: -20%;
+    }
+
     .quote-gradient-2 {
-        display: none;
+        width: 200px;
+        height: 200px;
+        right: -15%;
+        bottom: -15%;
     }
 }
