@@ -33,7 +33,7 @@
 .timeline-dot-current {
     background: var(--gradient-primary);
     border-color: var(--primary-light);
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.5);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
 }
 
 .dot-inner {
@@ -63,7 +63,7 @@
 .timeline-line {
     width: 2px;
     flex-grow: 1;
-    background: linear-gradient(to bottom, var(--primary), rgba(79, 70, 229, 0.1));
+    background: linear-gradient(to bottom, var(--primary), rgba(57, 255, 20, 0.1));
     margin-top: 8px;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .timeline-content:hover {
-    border-color: rgba(79, 70, 229, 0.2);
+    border-color: rgba(57, 255, 20, 0.2);
     box-shadow: var(--shadow-sm);
 }
 
@@ -96,7 +96,7 @@
     font-weight: 500;
     padding: 4px 12px;
     border-radius: var(--radius-full);
-    background: rgba(79, 70, 229, 0.1);
+    background: rgba(57, 255, 20, 0.1);
     color: var(--primary-light);
 }
 
@@ -156,7 +156,7 @@
     letter-spacing: 1px;
     padding: 6px 12px;
     background: var(--gradient-primary);
-    color: white;
+    color: #0A0A0A;
     border-radius: var(--radius-full);
 }
 

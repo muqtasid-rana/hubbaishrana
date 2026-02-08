@@ -19,7 +19,7 @@
     padding: 50px;
     background: var(--bg-card);
     border-radius: var(--radius-xl);
-    border: 2px solid rgba(79, 70, 229, 0.2);
+    border: 2px solid rgba(57, 255, 20, 0.2);
     position: relative;
     overflow: hidden;
     margin-bottom: 80px;
@@ -104,11 +104,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
 }
 
 .playstore-image img {
     width: 100%;
-    max-width: 300px;
+    height: 100%;
+    object-fit: cover;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
 }

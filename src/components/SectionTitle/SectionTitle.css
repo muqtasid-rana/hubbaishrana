@@ -19,9 +19,9 @@
     color: var(--primary);
     margin-bottom: 12px;
     padding: 6px 16px;
-    background: rgba(79, 70, 229, 0.1);
+    background: rgba(57, 255, 20, 0.1);
     border-radius: var(--radius-full);
-    border: 1px solid rgba(79, 70, 229, 0.2);
+    border: 1px solid rgba(57, 255, 20, 0.2);
 }
 
 .section-title h2 {
@@ -45,12 +45,12 @@
 .section-title-line::before,
 .section-title-line::after {
     content: '';
-    height: 1px;
+    height: 2px;
     width: 50px;
     background: linear-gradient(90deg,
-            transparent,
-            rgba(79, 70, 229, 0.5),
-            transparent);
+            rgba(57, 255, 20, 0.2),
+            rgba(57, 255, 20, 0.6),
+            rgba(57, 255, 20, 0.2));
 }
 
 .line-glow {
@@ -60,22 +60,8 @@
     background: var(--gradient-primary);
     border-radius: 50%;
     margin: 0 12px;
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.6);
-    animation: pulse-glow 2s ease-in-out infinite;
-}
-
-@keyframes pulse-glow {
-
-    0%,
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 20px rgba(79, 70, 229, 0.6);
-    }
-
-    50% {
-        transform: scale(1.1);
-        box-shadow: 0 0 30px rgba(79, 70, 229, 0.8);
-    }
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
+    /* Animation removed - now static */
 }
 
 /* ========================================

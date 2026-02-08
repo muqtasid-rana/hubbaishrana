@@ -22,9 +22,6 @@ const SmallProjectCard = ({ project, index = 0 }) => {
                         </span>
                     </div>
                 )}
-                <div className="small-project-overlay">
-                    <span className="view-project">View Project</span>
-                </div>
             </div>
 
             <div className="small-project-content">

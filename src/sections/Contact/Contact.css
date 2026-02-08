@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(79, 70, 229, 0.1);
+    background: transparent;
     border-radius: var(--radius-md);
     flex-shrink: 0;
 }
@@ -104,7 +104,7 @@
 
 .social-card:hover {
     background: var(--bg-card-hover);
-    border-color: rgba(79, 70, 229, 0.3);
+    border-color: rgba(57, 255, 20, 0.3);
     box-shadow: var(--shadow-sm);
     transform: translateY(-3px);
 }
@@ -122,6 +122,70 @@
 
 .social-card:hover span {
     color: var(--text-primary);
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background: var(--bg-card);
+    border-radius: var(--radius-xl);
+    padding: 40px;
+    border: var(--border-subtle);
+}
+
+.contact-form-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 28px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background: var(--bg-dark);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(57, 255, 20, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
 }
 
 /* ========================================
@@ -169,6 +233,14 @@
 
     .social-card {
         padding: 18px;
+    }
+
+    .contact-form-section {
+        padding: 32px;
+    }
+
+    .contact-form-section h3 {
+        text-align: center;
     }
 }
 
@@ -227,6 +299,19 @@
     .social-card span {
         font-size: 0.9rem;
     }
+
+    .contact-form-section {
+        padding: 28px;
+    }
+
+    .contact-form-section h3 {
+        font-size: 1.35rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 16px;
+    }
 }
 
 /* ========================================
@@ -239,10 +324,6 @@
 
     .contact-info {
         text-align: center;
-    }
-
-    .contact-item {
-        justify-content: center;
     }
 
     .contact-info h3 {
@@ -258,21 +339,29 @@
     .contact-details {
         gap: 14px;
         margin-bottom: 24px;
-    }
-
-    .contact-icon {
-        width: 36px;
-        height: 36px;
-        font-size: 0.9rem;
+        align-items: center;
     }
 
     .contact-item {
-        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .contact-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .contact-item div {
+        text-align: center;
     }
 
     .contact-item a,
     .contact-item span:not(.contact-label) {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .contact-label {
@@ -300,5 +389,28 @@
 
     .social-card span {
         font-size: 0.85rem;
+    }
+
+    .contact-form-section {
+        padding: 20px;
+    }
+
+    .contact-form-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        gap: 6px;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 0.95rem;
     }
 }

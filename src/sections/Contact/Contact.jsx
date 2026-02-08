@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
     FaEnvelope,
     FaLinkedinIn,
@@ -5,7 +6,8 @@ import {
     FaInstagram,
     FaYoutube,
     FaTwitter,
-    FaMapMarkerAlt
+    FaMapMarkerAlt,
+    FaPaperPlane
 } from 'react-icons/fa';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import Button from '../../components/Button/Button';
@@ -20,6 +22,26 @@ const socialLinks = [
 ];
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const { name, email, message } = formData;
+        const mailtoLink = `mailto:mmuqtasidrana@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        window.location.href = mailtoLink;
+    };
+
     return (
         <section id="contact" className="contact section">
             <div className="container">
@@ -54,35 +76,71 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <Button
-                            href="https://calendly.com/mmuqtasidrana/30min"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            size="lg"
-                        >
-                            Schedule a Meeting
-                        </Button>
+                        <div className="social-section">
+                            <h4>Connect with me</h4>
+                            <div className="social-grid">
+                                {socialLinks.map((social, index) => (
+                                    <a
+                                        key={index}
+                                        href={social.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="social-card"
+                                    >
+                                        <social.icon
+                                            className="social-card-icon"
+                                            style={{ color: social.color }}
+                                        />
+                                        <span>{social.label}</span>
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="social-section">
-                        <h4>Connect with me</h4>
-                        <div className="social-grid">
-                            {socialLinks.map((social, index) => (
-                                <a
-                                    key={index}
-                                    href={social.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="social-card"
-                                >
-                                    <social.icon
-                                        className="social-card-icon"
-                                        style={{ color: social.color }}
-                                    />
-                                    <span>{social.label}</span>
-                                </a>
-                            ))}
-                        </div>
+                    <div className="contact-form-section">
+                        <h3>Send me a message</h3>
+                        <form className="contact-form" onSubmit={handleSubmit}>
+                            <div className="form-group">
+                                <label htmlFor="name">Your Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    placeholder="John Doe"
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Your Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    placeholder="john@example.com"
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="message">Your Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    placeholder="Tell me about your project..."
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+                            <Button type="submit" size="lg" icon={<FaPaperPlane />}>
+                                Send Message
+                            </Button>
+                        </form>
                     </div>
                 </div>
             </div>

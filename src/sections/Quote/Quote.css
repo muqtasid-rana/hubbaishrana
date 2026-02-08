@@ -7,7 +7,7 @@
 .quote-background {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #0f0a1f 0%, #1a0a2e 50%, #0a0a1a 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #0a0a0a 100%);
 }
 
 .quote-gradient-1 {
@@ -16,7 +16,7 @@
     left: -20%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(79, 70, 229, 0.15) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(57, 255, 20, 0.15) 0%, transparent 60%);
 }
 
 .quote-gradient-2 {
@@ -25,7 +25,7 @@
     right: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(46, 204, 15, 0.1) 0%, transparent 60%);
 }
 
 .quote-container {

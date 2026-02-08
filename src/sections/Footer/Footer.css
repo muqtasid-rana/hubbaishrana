@@ -47,14 +47,14 @@
 
 .footer-socials a:hover {
     background: var(--gradient-primary);
-    color: white;
+    color: #0A0A0A;
 }
 
 .footer-divider {
     height: 1px;
     background: linear-gradient(90deg,
             transparent,
-            rgba(79, 70, 229, 0.3),
+            rgba(57, 255, 20, 0.3),
             transparent);
 }
 

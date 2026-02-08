@@ -9,45 +9,45 @@
    CSS VARIABLES (Design Tokens)
    ======================================== */
 :root {
-  /* Primary Colors */
-  --primary: #4F46E5;
-  --primary-light: #6366F1;
-  --primary-dark: #4338CA;
+  /* Primary Colors - Neon Green */
+  --primary: #39FF14;
+  --primary-light: #5CFF3F;
+  --primary-dark: #2ECC0F;
 
-  /* Secondary Colors */
-  --secondary: #7C3AED;
-  --secondary-light: #8B5CF6;
-  --secondary-dark: #6D28D9;
+  /* Secondary Colors - Grey tones */
+  --secondary: #6B6B6B;
+  --secondary-light: #8A8A8A;
+  --secondary-dark: #4A4A4A;
 
-  /* Background Colors */
-  --bg-dark: #0A0A0F;
-  --bg-darker: #050508;
-  --bg-card: #12121A;
-  --bg-card-hover: #1A1A24;
-  --bg-elevated: #1E1E2A;
+  /* Background Colors - Black & Grey */
+  --bg-dark: #0A0A0A;
+  --bg-darker: #050505;
+  --bg-card: #141414;
+  --bg-card-hover: #1F1F1F;
+  --bg-elevated: #1A1A1A;
 
   /* Text Colors */
   --text-primary: #FFFFFF;
-  --text-secondary: #A1A1AA;
-  --text-muted: #71717A;
+  --text-secondary: #A0A0A0;
+  --text-muted: #6B6B6B;
 
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
-  --gradient-subtle: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
-  --gradient-glow: linear-gradient(135deg, rgba(79, 70, 229, 0.3) 0%, rgba(124, 58, 237, 0.3) 100%);
-  --gradient-bg: radial-gradient(ellipse at top, #1a1a2e 0%, #0A0A0F 50%);
+  /* Gradients - Neon Green */
+  --gradient-primary: linear-gradient(135deg, #39FF14 0%, #2ECC0F 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(57, 255, 20, 0.1) 0%, rgba(46, 204, 15, 0.1) 100%);
+  --gradient-glow: linear-gradient(135deg, rgba(57, 255, 20, 0.3) 0%, rgba(46, 204, 15, 0.3) 100%);
+  --gradient-bg: radial-gradient(ellipse at top, #1a1a1a 0%, #0A0A0A 50%);
 
-  /* Shadows & Glows */
+  /* Shadows & Glows - Neon Green */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-  --glow-primary: 0 0 40px rgba(79, 70, 229, 0.4);
-  --glow-secondary: 0 0 40px rgba(124, 58, 237, 0.4);
-  --glow-soft: 0 0 60px rgba(79, 70, 229, 0.2);
+  --glow-primary: 0 0 40px rgba(57, 255, 20, 0.4);
+  --glow-secondary: 0 0 40px rgba(46, 204, 15, 0.4);
+  --glow-soft: 0 0 60px rgba(57, 255, 20, 0.2);
 
   /* Border */
   --border-subtle: 1px solid rgba(255, 255, 255, 0.06);
-  --border-glow: 1px solid rgba(79, 70, 229, 0.3);
+  --border-glow: 1px solid rgba(57, 255, 20, 0.3);
 
   /* Spacing */
   --section-padding: 100px 0;
@@ -261,7 +261,7 @@ p {
 }
 
 .animated-gradient-text {
-  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark), var(--primary));
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

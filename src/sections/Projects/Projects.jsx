@@ -56,21 +56,24 @@ const Projects = () => {
                         <Button
                             href={playStoreApp.playStoreUrl}
                             target="_blank"
-                            icon={<FaExternalLinkAlt />}
                         >
-                            View on Play Store
+                            <FaExternalLinkAlt /> View on Play Store
                         </Button>
                     </div>
 
                     <div className="playstore-image">
-                        <div
-                            className="playstore-placeholder"
-                            style={{
-                                background: 'linear-gradient(135deg, #1a1a3e 0%, #0f0f2e 100%)'
-                            }}
-                        >
-                            <span className="app-icon">☪</span>
-                        </div>
+                        {playStoreApp.image ? (
+                            <img src={playStoreApp.image} alt={playStoreApp.title} />
+                        ) : (
+                            <div
+                                className="playstore-placeholder"
+                                style={{
+                                    background: 'linear-gradient(135deg, #1a1a3e 0%, #0f0f2e 100%)'
+                                }}
+                            >
+                                <span className="app-icon">☪</span>
+                            </div>
+                        )}
                     </div>
                 </div>
 

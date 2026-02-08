@@ -1,5 +1,4 @@
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import muqtasidPhoto from '../../assets/muqtasid.png';
 import './About.css';
 
 const About = () => {
@@ -38,7 +37,7 @@ const About = () => {
                     <div className="about-image fade-in-up" style={{ animationDelay: '0.2s' }}>
                         <div className="image-wrapper">
                             <img
-                                src={muqtasidPhoto}
+                                src="/assets/muq.png"
                                 alt="M.Muqtasid Rana"
                                 className="profile-photo"
                             />

@@ -17,7 +17,6 @@ export const timeline = [
         duration: 'Nov 2025 – Jan 2026',
         description: 'Developed and maintained cross-platform mobile applications using Flutter & Firebase. Applied industry-standard practices including MVVM architecture, Firebase Auth, Firestore, Storage, Cloud Functions, and AdMob integration.',
         type: 'work',
-        current: true
     },
     {
         id: 3,
