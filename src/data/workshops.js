@@ -6,7 +6,7 @@ export const workshopsConducted = [
         organization: 'City University App Development Society',
         date: '2025',
         description: 'Conducted a comprehensive workshop teaching students the fundamentals of Flutter development, state management, and Firebase integration.',
-        image: '/src/assets/workshopme.jpeg',
+        image: '/assets/workshopme.jpeg',
         attendees: '50+ Students'
     },
     {
@@ -15,7 +15,7 @@ export const workshopsConducted = [
         organization: 'GDG',
         date: '2025',
         description: 'Talk on how to work on a startup and the challenges and rewards of building a successful business.',
-        image: '/src/assets/2gdg.jpg',
+        image: '/assets/2gdg.jpg',
         attendees: '30+ Students'
     }
 ];
@@ -27,7 +27,7 @@ export const workshopsAttended = [
         organization: 'GDG',
         date: '2024',
         description: 'Attended GDG event focusing on latest Google technologies, cloud computing, and mobile development trends.',
-        image: '/src/assets/gdg3.jpg'
+        image: '/assets/gdg3.jpg'
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ export const workshopsAttended = [
         organization: 'Microsoft',
         date: '2025',
         description: 'Attended Microsoft Learner Student Ambassedor event focusing on latest Microsoft technologies, cloud computing, and mobile development trends.',
-        image: '/src/assets/1.jpg'
+        image: '/assets/1.jpg'
     },
     {
         id: 3,
@@ -43,6 +43,6 @@ export const workshopsAttended = [
         organization: 'Cyber Pashto Peshawar',
         date: '2025',
         description: 'Networking event with industry professionals and learning about cutting-edge development practices.',
-        image: '/src/assets/cyber.jpeg'
+        image: '/assets/cyber.jpeg'
     }
 ];
