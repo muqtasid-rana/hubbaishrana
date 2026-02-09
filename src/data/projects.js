@@ -3,29 +3,29 @@ export const featuredProjects = [
     {
         id: 'incorpo',
         title: 'Incorpo - Automated Hiring System',
-        description: 'A fully automated hiring system that parses CVs, filters candidates, rates them accordingly, and sends automated emails to selected candidates. Simplifies the entire recruitment process.',
+        description: 'Designed a streamlined hiring platform UI that simplifies the recruitment journey. Created intuitive dashboards for recruiters, candidate profile cards, and seamless user flows from job posting to candidate selection.',
         image: '/assets/mockups/incorp.png',
         caseStudy: {
-            problem: 'Companies waste hours manually reviewing CVs, filtering candidates, and managing recruitment data.',
-            solution: 'Built an automated hiring platform that parses CVs, extracts candidate skills, and ranks profiles using AI.',
-            techStack: ['ReactJS', 'NodeJS', 'Flutter', 'Firebase Auth', 'Firestore', 'Cloud Functions', 'Python CV Parsing API', 'AI Ranking', 'MVVM'],
-            result: 'Currently in deployment, with automation reducing screening time by over 70%.'
+            problem: 'Recruiters struggled with cluttered interfaces and complex workflows while reviewing candidates and managing hiring pipelines.',
+            solution: 'Designed a clean, intuitive interface with smart candidate cards, visual progress tracking, and one-click actions to streamline the hiring experience.',
+            techStack: ['Figma', 'UI/UX Design', 'Design System', 'Prototyping', 'User Research', 'Wireframing'],
+            result: 'Successfully delivered a user-friendly design that reduced recruiter onboarding time and improved workflow efficiency.'
         },
-        tags: ['Full-Stack', 'AI', 'SaaS'],
+        tags: ['UI/UX Design', 'Dashboard', 'SaaS'],
         featured: true
     },
     {
         id: 'letitfly',
         title: 'Let It Fly',
-        description: 'An anonymous emotional support platform where users can express feelings freely without fear of judgment. Features real-time interactions, messages, notifications, and AI integration.',
+        description: 'Designed a calming, safe-space mobile app for anonymous emotional expression. Focused on creating a judgment-free visual experience with soft aesthetics, intuitive navigation, and thoughtful micro-interactions.',
         image: '/assets/mockups/letitfly.png',
         caseStudy: {
-            problem: 'People needed a safe space to share feelings anonymously—no existing platform allowed expressing emotions without fear of judgment.',
-            solution: 'Built an anonymous emotional support platform where users can write, share, and connect freely without revealing their identity.',
-            techStack: ['Flutter', 'MVVM', 'Provider', 'Firebase Auth', 'Firestore', 'Storage', 'Cloud Functions', 'FCM', 'AI Integration', 'Google Ads', 'Firebase Messaging', 'In-App-Purchases'],
-            result: 'Currently in deployment process.'
+            problem: 'Existing mental wellness apps felt clinical and impersonal—users needed a warm, inviting space to express their emotions without stigma.',
+            solution: 'Created a compassionate design language with soft colors, gentle animations, and anonymous posting flows that encourage authentic expression.',
+            techStack: ['Figma', 'Mobile UI Design', 'Prototyping', 'User Research', 'Emotional Design', 'Accessibility'],
+            result: 'Delivered a design that users described as calming and approachable, currently in deployment.'
         },
-        tags: ['Mobile App', 'Firebase', 'AI'],
+        tags: ['Mobile App', 'UI/UX Design', 'Wellness'],
         featured: true
     }
 ];
@@ -48,6 +48,45 @@ export const playStoreApp = {
 
 // Main Projects (Case Study Worthy)
 export const mainProjects = [
+    {
+        id: 'hybrid',
+        title: 'Hybrid Mediaworks',
+        description: 'Designed user experiences for digital products at Hybrid Mediaworks, combining UX principles with AI-powered workflows to deliver high-quality designs efficiently.',
+        image: '/assets/mockups/hybrid.jpeg',
+        caseStudy: {
+            problem: 'Needed efficient design workflows to handle multiple digital product projects.',
+            solution: 'Implemented AI-powered design workflows combined with traditional UX principles.',
+            techStack: ['Figma', 'AI Tools', 'UX Research', 'Prototyping'],
+            result: 'Delivered high-quality designs efficiently across multiple projects.'
+        },
+        tags: ['UX Design', 'AI Workflow']
+    },
+    {
+        id: 'pocketwatcher',
+        title: 'Pocket Watcher Finance',
+        description: 'A personal finance tracking app that helps users monitor expenses, set budgets, and gain insights into their spending habits.',
+        image: '/assets/mockups/pocketwatcher finance.jpeg',
+        caseStudy: {
+            problem: 'Users needed a simple way to track personal finances and understand spending patterns.',
+            solution: 'Built a finance tracking app with budget management and spending analytics.',
+            techStack: ['Flutter', 'Firebase', 'Charts', 'MVVM'],
+            result: 'Successfully helped users gain better control over their finances.'
+        },
+        tags: ['Mobile App', 'Finance']
+    },
+    {
+        id: 'motiveads',
+        title: 'Motive Ads',
+        description: 'An advertising platform interface designed for managing and tracking ad campaigns with analytics and performance metrics.',
+        image: '/assets/mockups/motive ads.jpeg',
+        caseStudy: {
+            problem: 'Advertisers needed a streamlined platform to manage and track ad campaigns.',
+            solution: 'Designed an intuitive advertising dashboard with campaign management and analytics.',
+            techStack: ['UI/UX Design', 'Figma', 'Dashboard Design', 'Analytics'],
+            result: 'Created a user-friendly advertising management interface.'
+        },
+        tags: ['UI/UX', 'Dashboard']
+    },
     {
         id: 'inayat-motors',
         title: 'Inayat Motors - Bike Shop Management System',
@@ -113,19 +152,7 @@ export const mainProjects = [
         },
         tags: ['Mobile App', 'API']
     },
-    {
-        id: 'etisalat',
-        title: 'Etisalat AFG SDK API Development',
-        description: 'Developed multiple APIs using Firebase & NodeJS for Etisalat SDK integration.',
-        image: '/assets/mockups/etisalat.png',
-        caseStudy: {
-            problem: 'Client needed custom APIs to power their mobile application.',
-            solution: 'Created comprehensive APIs as per client requirements.',
-            techStack: ['Flutter', 'Firebase', 'NodeJS', 'MVVM'],
-            result: 'Client was satisfied with the results and integration.'
-        },
-        tags: ['Backend', 'API']
-    },
+
     {
         id: 'lms',
         title: 'PMDC School LMS UI',
@@ -151,18 +178,46 @@ export const mainProjects = [
             result: 'Currently in development with database integration.'
         },
         tags: ['Mobile App', 'E-commerce']
+    },
+
+    {
+        id: 'navigator',
+        title: 'Navigator',
+        description: 'A navigation and mapping application with route planning, location search, and real-time directions.',
+        image: '/assets/mockups/navigator.jpeg',
+        caseStudy: {
+            problem: 'Users needed intuitive navigation with efficient route planning capabilities.',
+            solution: 'Developed a navigation app with smart routing and location-based features.',
+            techStack: ['Flutter', 'Google Maps API', 'Location Services', 'MVVM'],
+            result: 'Delivered a reliable navigation experience for users.'
+        },
+        tags: ['Mobile App', 'Maps']
+    },
+    {
+        id: 'testolz',
+        title: 'Testolz',
+        description: 'An online testing and assessment platform for creating, managing, and analyzing quizzes and examinations.',
+        image: '/assets/mockups/testolz.jpeg',
+        caseStudy: {
+            problem: 'Educators needed a platform to create and manage online assessments efficiently.',
+            solution: 'Built a comprehensive testing platform with quiz creation, timer, and result analytics.',
+            techStack: ['Flutter', 'Firebase', 'Cloud Functions', 'Analytics'],
+            result: 'Provided an effective assessment tool for educational purposes.'
+        },
+        tags: ['Education', 'Assessment']
     }
 ];
 
 // Small Projects (Grid Display)
 export const smallProjects = [
     {
-        id: 'chatnova',
-        title: 'ChatNova',
-        description: 'A real-time chat app built with Flutter and Firebase featuring message sync, profile management, and last seen.',
-        image: '/assets/mockups/chatnova.png',
-        tags: ['Flutter', 'Firebase']
+        id: 'quizapp',
+        title: 'Quiz App',
+        description: 'A fun and interactive quiz application with multiple categories and score tracking.',
+        image: '/assets/mockups/quiz app minor.jpeg',
+        tags: ['Flutter', 'Quiz']
     },
+
     {
         id: 'youmovies',
         title: 'You Movies',
@@ -177,13 +232,7 @@ export const smallProjects = [
         image: '/assets/mockups/epic.png',
         tags: ['Flutter', 'Game']
     },
-    {
-        id: 'afghan-flavours',
-        title: 'Afghan Flavours - APIs',
-        description: 'A recipe and cuisine app with API integration for Afghan dishes, categories, and search features.',
-        image: '/assets/mockups/afghan.png',
-        tags: ['Flutter', 'API']
-    },
+
     {
         id: 'skillathon',
         title: 'Skillathon Competition App',

@@ -4,6 +4,8 @@
     overflow: hidden;
     border: var(--border-subtle);
     transition: all 0.3s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .project-card:hover {

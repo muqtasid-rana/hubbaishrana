@@ -9,7 +9,6 @@ const navLinks = [
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'services', label: 'Services' },
-    { id: 'achievements', label: 'Achievements' },
     { id: 'workshops', label: 'Workshops' },
     { id: 'certificates', label: 'Certificates' },
     { id: 'contact', label: 'Contact' }
@@ -45,7 +44,7 @@ const Header = () => {
                         className="logo"
                         onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
                     >
-                        <span className="logo-text">M</span>
+                        <span className="logo-text">H</span>
                         <span className="logo-dot">.</span>
                     </a>
 
@@ -65,7 +64,7 @@ const Header = () => {
                     </div>
 
                     <Button
-                        href="https://calendly.com/mmuqtasidrana/30min"
+                        href="https://wa.me/923129714470"
                         target="_blank"
                         rel="noopener noreferrer"
                         size="sm"
@@ -81,7 +80,7 @@ const Header = () => {
                     className="logo-mobile"
                     onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
                 >
-                    <span className="logo-text">M</span>
+                    <span className="logo-text">H</span>
                     <span className="logo-dot">.</span>
                 </a>
 
@@ -111,7 +110,7 @@ const Header = () => {
                         </a>
                     ))}
                     <Button
-                        href="https://calendly.com"
+                        href="https://wa.me/923129714470"
                         target="_blank"
                         rel="noopener noreferrer"
                         size="md"

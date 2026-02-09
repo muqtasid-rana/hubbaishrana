@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub, FaInstagram, FaYoutube, FaHeart } from 'react-icons/fa';
+import { FaLinkedinIn, FaBehance, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -9,12 +9,12 @@ const Footer = () => {
             <div className="container footer-container">
                 <div className="footer-top">
                     <a href="#home" className="footer-logo">
-                        M<span>.</span>
+                        H<span>.</span>
                     </a>
 
                     <div className="footer-socials">
                         <a
-                            href="https://linkedin.comin/muqtasid-rana"
+                            href="https://www.linkedin.com/in/hubbaish-rana-6042a0375/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
@@ -22,15 +22,15 @@ const Footer = () => {
                             <FaLinkedinIn />
                         </a>
                         <a
-                            href="https://github.com/muqtasid-rana"
+                            href="https://www.behance.net/hubbaishrana01"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="GitHub"
+                            aria-label="Behance"
                         >
-                            <FaGithub />
+                            <FaBehance />
                         </a>
                         <a
-                            href="https://instagram.com/muqtasid_devvv"
+                            href="https://instagram.com/hubbaishrana"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Instagram"
@@ -38,12 +38,12 @@ const Footer = () => {
                             <FaInstagram />
                         </a>
                         <a
-                            href="https://youtube.com/@muqtasidrana"
+                            href="mailto:hubbaishrana@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="YouTube"
+                            aria-label="Gmail"
                         >
-                            <FaYoutube />
+                            <FaEnvelope />
                         </a>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <p className="footer-copyright">
-                        © {currentYear} M.Muqtasid Rana. All rights reserved.
+                        © {currentYear} M.Hubbaish Rana. All rights reserved.
                     </p>
 
                 </div>

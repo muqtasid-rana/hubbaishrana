@@ -15,19 +15,21 @@ const About = () => {
 
                         <div className="about-text">
                             <p>
-                                I'm a <strong>Flutter-focused Mobile App Developer</strong> and <strong>Software Engineering student</strong>
-                                with a passion for building applications that deliver real value. With expertise spanning mobile,
-                                web, and backend development, I bring ideas to life through clean code and thoughtful design.
+                                I'm a <strong>Computer Systems Engineer × UX/UI Designer</strong> working at the
+                                intersection of design and AI. I design digital products by combining UX principles,
+                                system thinking, and AI-powered workflows to move from idea to high-quality design
+                                in days, not weeks.
                             </p>
                             <p>
-                                Beyond development, I'm a <strong>content creator</strong> sharing my journey and insights with
-                                the tech community. I believe in continuous learning and currently have multiple apps published
-                                on the Play Store, with more in development.
+                                My focus is on <strong>simplifying complex problems</strong>, accelerating design
+                                processes, and building <strong>scalable interfaces</strong> for modern products.
+                                I'm actively experimenting with AI tools, automation, and rapid prototyping to
+                                shape the future of design.
                             </p>
                             <p>
-                                Currently, I'm building <strong>Incorpo</strong> — my own SaaS product that automates the hiring
-                                process using AI. My goal is to create software that not only works but delivers measurable
-                                results and strong ROI for clients.
+                                Currently, I'm the <strong>Founder of Groflex Technologies</strong> and working as a
+                                <strong> User Experience Designer</strong> at Hybrid Mediaworks, bringing innovative
+                                design solutions to complex digital challenges.
                             </p>
                         </div>
 
@@ -37,8 +39,8 @@ const About = () => {
                     <div className="about-image fade-in-up" style={{ animationDelay: '0.2s' }}>
                         <div className="image-wrapper">
                             <img
-                                src="/assets/muq.png"
-                                alt="M.Muqtasid Rana"
+                                src="/assets/hub.jpeg"
+                                alt="M.Hubbaish Rana"
                                 className="profile-photo"
                             />
                             <div className="image-decorations">

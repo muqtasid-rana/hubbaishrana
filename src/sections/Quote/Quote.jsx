@@ -13,11 +13,11 @@ const Quote = () => {
                     <div className="quote-mark">"</div>
                     <blockquote>
                         <p>
-                            I consider a project successful when it delivers real results
-                            and a strong return on investment for the client.
+                            Good design is not just about how it looks,
+                            it's about how it works and makes people feel.
                         </p>
                     </blockquote>
-                    <cite>— M.Muqtasid Rana</cite>
+                    <cite>— M.Hubbaish Rana</cite>
                 </div>
             </div>
         </section>

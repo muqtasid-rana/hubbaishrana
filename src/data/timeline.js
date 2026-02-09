@@ -1,62 +1,52 @@
 export const timeline = [
     {
         id: 1,
-        title: 'Senior Developer & Representative',
-        subtitle: 'App Development Society',
-        institution: 'City University of Sciences & Information Technology',
-        duration: 'Aug 2025 – Present',
-        description: 'Leading development of university projects and conducting workshops to mentor students in mobile app development. Representing City University at official innovation events and tech competitions.',
+        title: 'User Experience Designer',
+        subtitle: 'Hybrid Mediaworks',
+        institution: 'Islamabad',
+        duration: 'Jan 2026 – Present',
+        description: 'Designing user experiences for digital products, combining UX principles with AI-powered workflows to deliver high-quality designs efficiently.',
         type: 'work',
         current: true
     },
     {
         id: 2,
-        title: 'Flutter App Developer - Intern',
-        subtitle: 'Devspire Solutions',
+        title: 'Founder',
+        subtitle: 'Groflex Technologies',
         institution: 'Peshawar',
-        duration: 'Nov 2025 – Jan 2026',
-        description: 'Developed and maintained cross-platform mobile applications using Flutter & Firebase. Applied industry-standard practices including MVVM architecture, Firebase Auth, Firestore, Storage, Cloud Functions, and AdMob integration.',
-        type: 'work',
-    },
-    {
-        id: 3,
-        title: 'Founder & Lead Developer',
-        subtitle: 'Incorpo - SaaS Startup',
-        institution: 'Self Employed',
-        duration: 'Present',
-        description: 'Building an Automated Recruitment System (SaaS) that helps companies hire faster and smarter through AI-powered CV parsing, candidate ranking, and automated communication workflows.',
+        duration: 'Jun 2024 – Present',
+        description: 'Founded and leading a design technology company focused on creating scalable interfaces and digital products using modern design systems and AI-powered tools.',
         type: 'startup',
         current: true
     },
     {
-        id: 4,
-        title: 'Mobile App Development Internship',
-        subtitle: 'Under Senior Developer Moiz Altaf',
-        institution: 'Professional Training',
-        duration: 'Feb 2025 – Aug 2025',
-        description: 'Developed and maintained cross-platform mobile applications using Flutter & Firebase. Applied industry-standard practices including MVVM architecture, Firebase Auth, Firestore, Storage, Cloud Functions, and AdMob integration.',
+        id: 3,
+        title: 'User Experience Designer',
+        subtitle: 'Frontmatter',
+        institution: 'California, United States',
+        duration: 'Dec 2024 – Jan 2026',
+        description: 'Designed user experiences for various digital products, focusing on simplifying complex problems and building scalable interfaces for modern applications.',
         type: 'work'
     },
     {
-        id: 5,
-        title: 'Freelance Developer & Personal Projects',
-        subtitle: 'Self-Directed Learning',
-        institution: 'Independent',
-        duration: '2023 – Present',
-        description: 'Built and deployed production apps including Let It Fly, PayProof, and Afghan Flavors. Handled full development lifecycle: UI/UX design, development, testing, and Play Store deployment. Currently building a SaaS product.',
-        type: 'freelance',
-        current: true
+        id: 4,
+        title: 'UX UI Designer',
+        subtitle: 'Frontmatter',
+        institution: 'Remote',
+        duration: 'Until Jul 2025',
+        description: 'Created user interface designs and improved user experiences through research-driven design decisions and rapid prototyping techniques.',
+        type: 'work'
     }
 ];
 
 export const education = [
     {
         id: 1,
-        title: "Bachelor's in Software Engineering",
-        institution: 'City University of Sciences & Information Technology',
-        duration: '2023 – Present',
-        description: 'Pursuing a comprehensive software engineering degree with focus on mobile development, software architecture, and modern development practices.',
+        title: "Bachelor of Science - Computer Engineering",
+        institution: 'University of Engineering & Technology Peshawar',
+        duration: 'Aug 2021 – Aug 2025',
+        description: 'Completed BS in Computer Engineering with focus on computer systems, software development, and design technology. Combined technical knowledge with design skills to work at the intersection of engineering and user experience.',
         type: 'education',
-        current: true
+        current: false
     }
 ];

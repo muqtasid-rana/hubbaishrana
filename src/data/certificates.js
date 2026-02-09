@@ -2,72 +2,50 @@
 export const certificates = [
     {
         id: 1,
-        title: 'Flutter & Firebase App Development',
-        issuer: 'The Digital Adda Academy',
-        date: 'Issued Jan 2024',
-        description: 'Completed an in-depth course covering Flutter app development with Firebase integration, MVVM architecture, authentication, Firestore, and cloud storage.'
+        title: 'Foundation of User Experience (UX) Design',
+        issuer: 'Google - Coursera',
+        date: '06/10/2023 – 21/10/2023',
+        link: 'https://www.coursera.org/account/accomplishments/verify/BP75X67ETEHS',
+        description: 'Completed foundational course on UX design principles, user research methods, and design thinking processes.'
     },
     {
         id: 2,
-        title: 'Digital Innovative Challenge KPK Participation',
-        issuer: 'WatSan Cell, Board of Khyber Pakhtunkhwa',
-        date: 'Issued Nov 2025',
-        description: 'Developed an idea about hygene and secured 3rd position accross all universities in KPK.'
+        title: 'Start the UX Design Process: Empathize, Define, and Ideate',
+        issuer: 'Google - Coursera',
+        date: '26/11/2023 – 05/12/2023',
+        link: 'https://www.coursera.org/account/accomplishments/verify/BP75X67ETEHS',
+        description: 'Learned to empathize with users, define problems, and ideate solutions in the UX design process.'
     },
     {
         id: 3,
-        title: 'Skillathon Participation In App Development',
-        issuer: 'City University Of Sciences & Information Technology',
-        date: 'Issued Dec 2024',
-        description: 'Participated in a university-level app development competition, building a fully functional app prototype within limited time.'
+        title: 'Build Wireframes and Low-Fidelity Prototypes',
+        issuer: 'Google - Coursera',
+        date: '04/02/2024 – 16/02/2024',
+        link: 'https://www.coursera.org/account/accomplishments/verify/X7C7DS9Q9628',
+        description: 'Developed skills in creating wireframes and low-fidelity prototypes for user interface design.'
     },
     {
         id: 4,
-        title: 'Prompt Engineering',
-        issuer: 'Great Learning',
-        date: 'Issued Jan 2025',
-        description: 'Gained expertise in crafting effective AI prompts for various use cases including automation, chatbots, and content generation.'
+        title: 'Create High-Fidelity Designs and Prototypes in Figma',
+        issuer: 'Google - Coursera',
+        date: '01/02/2024 – 10/02/2024',
+        link: 'https://www.coursera.org/account/accomplishments/verify/B32XX9NXBBCV',
+        description: 'Mastered creating high-fidelity designs and interactive prototypes using Figma.'
     },
     {
         id: 5,
-        title: 'Networking Essentials',
-        issuer: 'Cisco',
-        date: 'Issued May 2025',
-        description: 'Studied the fundamentals of networking including IP addressing, subnetting, network protocols, and essential troubleshooting skills.'
+        title: 'Conduct UX Research and Test Early Concepts',
+        issuer: 'Google - Coursera',
+        date: '15/03/2024 – 25/03/2024',
+        link: 'https://www.coursera.org/account/accomplishments/verify/6DCVNELFHX2P',
+        description: 'Learned UX research methodologies and usability testing techniques for validating design concepts.'
     },
     {
         id: 6,
-        title: 'HTML/CSS',
-        issuer: 'CISCO',
-        date: 'Issued Aug 2025',
-        description: 'Learned HTML and CSS in depth, which are crucial for web development.'
-    },
-    {
-        id: 7,
-        title: 'Microsoft Learner Student Ambassador',
-        issuer: 'Microsoft Learner',
-        date: 'Issued May 2025',
-        description: 'Selected as a Microsoft Student Ambassador, engaging in community events, technical workshops, and collaborative learning projects.'
-    },
-    {
-        id: 8,
-        title: 'Network Technician Career Path',
-        issuer: 'Cisco',
-        date: 'Issued April 2025',
-        description: 'Completed a structured program on network installation, configuration, maintenance, and security best practices.'
-    },
-    {
-        id: 9,
-        title: 'Fundamentals In Digital Marketing',
-        issuer: 'Google',
-        date: 'Issued Nov 2023',
-        description: 'Learned the core concepts of digital marketing including SEO, SEM, social media strategies, and online advertising fundamentals.'
-    },
-    {
-        id: 10,
-        title: 'VISIO SPARK 2025 Participant - App Development',
-        issuer: 'VISIO SPARK',
-        date: 'Issued 2025',
-        description: 'Participated in VISIO SPARK 2025, showcasing app development skills and innovative solutions.'
+        title: 'Build Dynamic User Interfaces (UI) for Websites',
+        issuer: 'Google - Coursera',
+        date: 'Completed 2024',
+        link: 'https://www.coursera.org/account/accomplishments/verify/VXVFPN4PA5RN',
+        description: 'Gained expertise in building dynamic and responsive user interfaces for web applications.'
     }
 ];

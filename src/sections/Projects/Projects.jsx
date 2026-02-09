@@ -1,12 +1,24 @@
+import { useState } from 'react';
 import { FaGooglePlay, FaExternalLinkAlt } from 'react-icons/fa';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import SmallProjectCard from '../../components/SmallProjectCard/SmallProjectCard';
 import Button from '../../components/Button/Button';
+import ImageLightbox from '../../components/ImageLightbox/ImageLightbox';
 import { featuredProjects, playStoreApp, mainProjects, smallProjects } from '../../data/projects';
 import './Projects.css';
 
 const Projects = () => {
+    const [lightbox, setLightbox] = useState({ isOpen: false, image: '', title: '' });
+
+    const openLightbox = (image, title) => {
+        setLightbox({ isOpen: true, image, title });
+    };
+
+    const closeLightbox = () => {
+        setLightbox({ isOpen: false, image: '', title: '' });
+    };
+
     return (
         <section id="projects" className="projects section">
             <div className="container">
@@ -23,6 +35,7 @@ const Projects = () => {
                             project={project}
                             index={index}
                             variant="featured"
+                            onImageClick={() => openLightbox(project.image, project.title)}
                         />
                     ))}
                 </div>
@@ -61,7 +74,11 @@ const Projects = () => {
                         </Button>
                     </div>
 
-                    <div className="playstore-image">
+                    <div
+                        className="playstore-image"
+                        onClick={() => openLightbox(playStoreApp.image, playStoreApp.title)}
+                        style={{ cursor: 'pointer' }}
+                    >
                         {playStoreApp.image ? (
                             <img src={playStoreApp.image} alt={playStoreApp.title} />
                         ) : (
@@ -84,11 +101,12 @@ const Projects = () => {
                 </div>
 
                 <div className="other-projects-grid">
-                    {mainProjects.slice(0, 6).map((project, index) => (
+                    {mainProjects.map((project, index) => (
                         <SmallProjectCard
                             key={project.id}
                             project={project}
                             index={index}
+                            onImageClick={() => openLightbox(project.image, project.title)}
                         />
                     ))}
                 </div>
@@ -102,12 +120,23 @@ const Projects = () => {
                             key={project.id}
                             project={project}
                             index={index}
+                            onImageClick={() => openLightbox(project.image, project.title)}
                         />
                     ))}
                 </div>
             </div>
+
+            {/* Lightbox Modal */}
+            {lightbox.isOpen && (
+                <ImageLightbox
+                    image={lightbox.image}
+                    title={lightbox.title}
+                    onClose={closeLightbox}
+                />
+            )}
         </section>
     );
 };
 
 export default Projects;
+

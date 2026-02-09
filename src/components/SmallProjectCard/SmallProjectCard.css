@@ -5,6 +5,8 @@
     border: var(--border-subtle);
     transition: all 0.3s ease;
     cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .small-project-card:hover {
@@ -49,6 +51,7 @@
     justify-content: center;
     opacity: 0;
     transition: all 0.3s ease;
+    pointer-events: none;
 }
 
 .small-project-card:hover .small-project-overlay {

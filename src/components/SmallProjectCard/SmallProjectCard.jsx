@@ -1,11 +1,15 @@
 import './SmallProjectCard.css';
 
-const SmallProjectCard = ({ project, index = 0 }) => {
+const SmallProjectCard = ({ project, index = 0, onImageClick }) => {
     const { title, description, image, tags } = project;
 
     return (
         <article className="small-project-card">
-            <div className="small-project-image">
+            <div
+                className="small-project-image"
+                onClick={onImageClick}
+                style={{ cursor: onImageClick ? 'pointer' : 'default' }}
+            >
                 {image ? (
                     <img src={image} alt={title} className="small-project-img" />
                 ) : (

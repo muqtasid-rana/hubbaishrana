@@ -1,98 +1,83 @@
 import {
-    FaMobileAlt,
-    FaDatabase,
-    FaGlobe,
-    FaLayerGroup,
     FaPaintBrush,
-    FaRobot,
-    FaGoogle,
-    FaPython,
-    FaCode,
-    FaAndroid,
-    FaFire,
-    FaPaperPlane,
+    FaMobileAlt,
+    FaDesktop,
+    FaBullhorn,
+    FaBoxOpen,
     FaFigma,
-    FaGooglePlay,
-    FaGithub,
-    FaTerminal
+    FaPenNib,
+    FaLayerGroup,
+    FaPalette,
+    FaUsers,
+    FaMagic,
+    FaImage,
+    FaPencilRuler
 } from 'react-icons/fa';
-import { SiCplusplus, SiHuggingface } from 'react-icons/si';
+import { SiAdobexd, SiSketch, SiInvision, SiCanva, SiAdobephotoshop, SiAdobeillustrator, SiAdobeaftereffects } from 'react-icons/si';
 
-// Skills organized by category
+// Skills organized by category for UX/UI Designer
 export const skillCategories = [
     {
-        category: 'Mobile Development',
+        category: 'Web Design',
         skills: [
-            { icon: FaMobileAlt, text: 'Mobile App Development (Flutter & Dart)' }
+            { icon: FaDesktop, text: 'Website UI/UX Design' },
+            { icon: FaLayerGroup, text: 'Responsive Web Design' }
         ]
     },
     {
-        category: 'Web Development',
+        category: 'App Design',
         skills: [
-            { icon: FaGlobe, text: 'Websites & Web Applications (ReactJS, NodeJS)' }
+            { icon: FaMobileAlt, text: 'Mobile App UI/UX Design' },
+            { icon: FaUsers, text: 'User Experience Research' }
         ]
     },
     {
-        category: 'Backend & Database',
+        category: 'Ad Creatives',
         skills: [
-            { icon: FaDatabase, text: 'Backend & Databases (Firebase, NodeJS, PHP)' },
-            { icon: FaGlobe, text: 'REST API Integration & Development' }
+            { icon: FaBullhorn, text: 'Social Media Ad Design' },
+            { icon: FaMagic, text: 'Banner & Display Ads' }
         ]
     },
     {
-        category: 'Architecture & Design',
+        category: 'Marketing Design',
         skills: [
-            { icon: FaLayerGroup, text: 'MVVM & MVC Architecture' },
-            { icon: FaPaintBrush, text: 'UI/UX Design' }
+            { icon: FaPalette, text: 'Brand Identity Design' },
+            { icon: FaPenNib, text: 'Marketing Collateral Design' }
         ]
     },
     {
-        category: 'AI & Automation',
+        category: 'Product Design',
         skills: [
-            { icon: FaRobot, text: 'AI Integration' },
-            { icon: FaRobot, text: 'Prompt Engineering' },
-            { icon: FaRobot, text: 'AI Automation' }
-        ]
-    },
-    {
-        category: 'Other Technologies',
-        skills: [
-            { icon: FaGlobe, text: 'Online & Offline Systems' },
-            { icon: FaGoogle, text: 'Mobile & Web Ads Integration' },
-            { icon: FaPython, text: 'Python' },
-            { icon: SiCplusplus, text: 'C++' }
+            { icon: FaBoxOpen, text: 'Product UI/UX Design' },
+            { icon: FaLayerGroup, text: 'Design Systems & Components' }
         ]
     }
 ];
 
 // Flat skills array for grid display
 export const skills = [
-    { icon: FaMobileAlt, text: 'Mobile App Development (Flutter & Dart)' },
-    { icon: FaGlobe, text: 'Websites & Web Applications (ReactJS, NodeJS)' },
-    { icon: FaDatabase, text: 'Backend & Databases (Firebase, NodeJS, PHP)' },
-    { icon: FaGlobe, text: 'Online & Offline Systems' },
-    { icon: FaGlobe, text: 'REST API Integration & Development' },
-    { icon: FaLayerGroup, text: 'MVVM & MVC Architecture' },
-    { icon: FaPaintBrush, text: 'UI/UX Design' },
-    { icon: FaRobot, text: 'AI Integration' },
-    { icon: FaGoogle, text: 'Mobile & Web Ads Integration' },
-    { icon: FaPython, text: 'Python' },
-    { icon: SiCplusplus, text: 'C++' },
-    { icon: FaRobot, text: 'Prompt Engineering' },
-    { icon: FaRobot, text: 'AI Automation' }
+    { icon: FaDesktop, text: 'Website UI/UX Design' },
+    { icon: FaLayerGroup, text: 'Responsive Web Design' },
+    { icon: FaMobileAlt, text: 'Mobile App UI/UX Design' },
+    { icon: FaUsers, text: 'User Experience Research' },
+    { icon: FaBullhorn, text: 'Social Media Ad Design' },
+    { icon: FaMagic, text: 'Banner & Display Ads' },
+    { icon: FaPalette, text: 'Brand Identity Design' },
+    { icon: FaPenNib, text: 'Marketing Collateral Design' },
+    { icon: FaBoxOpen, text: 'Product UI/UX Design' },
+    { icon: FaLayerGroup, text: 'Design Systems & Components' },
+    { icon: FaPaintBrush, text: 'Visual Design & Typography' },
+    { icon: FaPencilRuler, text: 'User Interface Prototyping' }
 ];
 
 // Tools
 export const tools = [
-    { icon: FaCode, text: 'VS Code' },
-    { icon: FaAndroid, text: 'Android Studio' },
-    { icon: FaFire, text: 'Firebase Console' },
-    { icon: FaFire, text: 'Firebase Studio' },
-    { icon: FaPaperPlane, text: 'Postman' },
     { icon: FaFigma, text: 'Figma' },
-    { icon: FaGooglePlay, text: 'Google Play Console' },
-    { icon: FaGithub, text: 'Git & GitHub' },
-    { icon: FaTerminal, text: 'Command Line' },
-    { icon: SiHuggingface, text: 'Hugging Face' },
-    { icon: FaRobot, text: 'Make (Automation)' }
+    { icon: SiAdobexd, text: 'Adobe XD' },
+    { icon: FaImage, text: 'Adobe Photoshop' },
+    { icon: FaPencilRuler, text: 'Adobe Illustrator' },
+    { icon: SiSketch, text: 'Sketch' },
+    { icon: SiInvision, text: 'InVision' },
+    { icon: SiCanva, text: 'Canva' },
+    { icon: FaMagic, text: 'Adobe After Effects' }
 ];

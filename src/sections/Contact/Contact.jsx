@@ -2,23 +2,21 @@ import { useState } from 'react';
 import {
     FaEnvelope,
     FaLinkedinIn,
-    FaGithub,
+    FaBehance,
     FaInstagram,
-    FaYoutube,
-    FaTwitter,
     FaMapMarkerAlt,
-    FaPaperPlane
+    FaPaperPlane,
+    FaPhone
 } from 'react-icons/fa';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import Button from '../../components/Button/Button';
 import './Contact.css';
 
 const socialLinks = [
-    { icon: FaLinkedinIn, label: 'LinkedIn', href: 'https://linkedin.com/in/muqtasid-rana', color: '#0A66C2' },
-    { icon: FaGithub, label: 'GitHub', href: 'https://github.com/muqtasid-rana', color: '#FFFFFF' },
-    { icon: FaInstagram, label: 'Instagram', href: 'https://instagram.com/muqtasid_devvv', color: '#E4405F' },
-    { icon: FaYoutube, label: 'YouTube', href: 'https://youtube.com/@muqtasidrana', color: '#FF0000' },
-    // { icon: FaTwitter, label: 'Twitter/X', href: 'https://twitter.com/muqtasidrana', color: '#1DA1F2' }
+    { icon: FaLinkedinIn, label: 'LinkedIn', href: 'https://www.linkedin.com/in/hubbaish-rana-6042a0375/', color: '#0A66C2' },
+    { icon: FaBehance, label: 'Behance', href: 'https://www.behance.net/hubbaishrana01', color: '#1769FF' },
+    { icon: FaInstagram, label: 'Instagram', href: 'https://instagram.com/hubbaishrana', color: '#E4405F' },
+    { icon: FaEnvelope, label: 'Gmail', href: 'mailto:hubbaishrana@gmail.com', color: '#EA4335' },
 ];
 
 const Contact = () => {
@@ -38,7 +36,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const { name, email, message } = formData;
-        const mailtoLink = `mailto:mmuqtasidrana@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        const mailtoLink = `mailto:hubbaishrana@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
         window.location.href = mailtoLink;
     };
 
@@ -54,8 +52,8 @@ const Contact = () => {
                     <div className="contact-info">
                         <h3>Let's work together</h3>
                         <p>
-                            I'm always excited to work on new projects and collaborate with
-                            innovative teams. Whether you need a mobile app, web solution,
+                            I'm always excited to work on new design projects and collaborate with
+                            innovative teams. Whether you need a web design, app design, ad creatives,
                             or just want to say hi — feel free to reach out!
                         </p>
 
@@ -64,14 +62,21 @@ const Contact = () => {
                                 <FaEnvelope className="contact-icon" />
                                 <div>
                                     <span className="contact-label">Email</span>
-                                    <a href="mailto:mmuqtasidrana@gmail.com">mmuqtasidrana@gmail.com</a>
+                                    <a href="mailto:hubbaishrana@gmail.com">hubbaishrana@gmail.com</a>
+                                </div>
+                            </div>
+                            <div className="contact-item">
+                                <FaPhone className="contact-icon" />
+                                <div>
+                                    <span className="contact-label">Phone</span>
+                                    <a href="tel:+923129714470">+92 312 9714470</a>
                                 </div>
                             </div>
                             <div className="contact-item">
                                 <FaMapMarkerAlt className="contact-icon" />
                                 <div>
                                     <span className="contact-label">Location</span>
-                                    <span>Pakistan</span>
+                                    <span>Islamabad, Pakistan</span>
                                 </div>
                             </div>
                         </div>

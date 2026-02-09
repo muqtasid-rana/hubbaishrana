@@ -1,4 +1,4 @@
-import { FaMobileAlt, FaCode, FaVideo, FaPaintBrush } from 'react-icons/fa';
+import { FaDesktop, FaMobileAlt, FaBullhorn, FaBoxOpen } from 'react-icons/fa';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import Button from '../../components/Button/Button';
@@ -6,37 +6,47 @@ import './Services.css';
 
 const services = [
     {
+        icon: FaDesktop,
+        title: 'Web Design',
+        description: 'Creating stunning, modern website designs that captivate users and deliver exceptional user experiences with focus on aesthetics and usability.',
+        features: [
+            'Website UI/UX Design',
+            'Responsive Design',
+            'Landing Page Design',
+            'Web App Interfaces'
+        ]
+    },
+    {
         icon: FaMobileAlt,
-        title: 'Mobile App Development',
-        description: 'Building high-performance cross-platform mobile applications with Flutter that deliver exceptional user experiences and drive real business results.',
+        title: 'App Design',
+        description: 'Designing intuitive and visually stunning mobile app interfaces for iOS and Android that prioritize user experience and engagement.',
         features: [
-            'Cross-platform iOS & Android',
-            'Firebase Integration',
-            'Push Notifications',
-            'Play Store Deployment'
-        ]
-    },
-    {
-        icon: FaCode,
-        title: 'Web Development',
-        description: 'Creating modern, responsive web applications using React.js and Node.js with focus on performance, SEO, and user engagement.',
-        features: [
-            'React.js Applications',
-            'Node.js Backend',
-            'REST API Development',
-            'Database Design'
-        ]
-    },
-
-    {
-        icon: FaPaintBrush,
-        title: 'UI/UX Design',
-        description: 'Designing intuitive and visually stunning interfaces that prioritize user experience and align with modern design principles.',
-        features: [
-            'Mobile App UI',
-            'Web Interface Design',
-            'Prototyping',
+            'Mobile App UI/UX',
+            'iOS & Android Design',
+            'Interactive Prototyping',
             'Design Systems'
+        ]
+    },
+    {
+        icon: FaBullhorn,
+        title: 'Ad Creatives & Marketing',
+        description: 'Creating eye-catching ad creatives and marketing materials that drive engagement and help brands stand out in competitive markets.',
+        features: [
+            'Social Media Ads',
+            'Banner & Display Ads',
+            'Marketing Collateral',
+            'Brand Identity'
+        ]
+    },
+    {
+        icon: FaBoxOpen,
+        title: 'Product Design',
+        description: 'End-to-end product design services from concept to final design, ensuring cohesive user experiences across all touchpoints.',
+        features: [
+            'Product UI/UX',
+            'Design Systems',
+            'User Research',
+            'Wireframing & Prototyping'
         ]
     }
 ];
@@ -63,7 +73,7 @@ const Services = () => {
                 <div className="services-cta">
                     <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
                     <Button
-                        href="https://calendly.com/mmuqtasidrana/30min"
+                        href="https://wa.me/923129714470"
                         target="_blank"
                         rel="noopener noreferrer"
                         size="lg"

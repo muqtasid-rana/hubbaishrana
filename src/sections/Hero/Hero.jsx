@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import { FaInstagram, FaLinkedinIn, FaGithub, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn, FaBehance, FaEnvelope } from 'react-icons/fa';
 import Button from '../../components/Button/Button';
 import './Hero.css';
 
 const roles = [
-    'Software Engineer',
-    'Mobile App Developer',
-    'Web Developer',
-    'UI/UX Designer',
-    'Content Creator'
+    'UX/UI Designer',
+    'Design Technologist',
+    'Founder @Groflex',
+    'Computer Systems Engineer',
+    'AI & UX Specialist'
 ];
 
 const Hero = () => {
@@ -32,8 +32,8 @@ const Hero = () => {
                     </span>
 
                     <h1 className="hero-title fade-in-up" style={{ animationDelay: '0.2s' }}>
-                        M.Muqtasid Rana
-                        <span className="hero-subtitle">Mobile App Developer</span>
+                        M.Hubbaish Rana
+                        <span className="hero-subtitle">UX/UI Designer</span>
                     </h1>
 
                     <div className="hero-roles fade-in-up" style={{ animationDelay: '0.3s' }}>
@@ -41,15 +41,15 @@ const Hero = () => {
                     </div>
 
                     <p className="hero-description fade-in-up" style={{ animationDelay: '0.4s' }}>
-                        I specialize in building premium mobile applications with Flutter,
-                        creating modern web solutions with React, and delivering software
-                        that drives real business results. Currently building my own SaaS
-                        while helping startups and businesses bring their ideas to life.
+                        Computer Systems Engineer × UX/UI Designer working at the intersection of
+                        design and AI. I design digital products by combining UX principles, system
+                        thinking, and AI-powered workflows to move from idea to high-quality design
+                        in days, not weeks.
                     </p>
 
                     <div className="hero-actions fade-in-up" style={{ animationDelay: '0.5s' }}>
                         <Button
-                            href="https://calendly.com/mmuqtasidrana/30min"
+                            href="https://wa.me/923129714470"
                             target="_blank"
                             rel="noopener noreferrer"
                             size="lg"
@@ -59,7 +59,7 @@ const Hero = () => {
 
                         <div className="hero-socials">
                             <a
-                                href="https://instagram.com/muqtasid_devvv"
+                                href="https://instagram.com/hubbaishrana"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"
@@ -68,7 +68,7 @@ const Hero = () => {
                                 <FaInstagram />
                             </a>
                             <a
-                                href="https://linkedin.comin/muqtasid-rana"
+                                href="https://www.linkedin.com/in/hubbaish-rana-6042a0375/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"
@@ -77,23 +77,22 @@ const Hero = () => {
                                 <FaLinkedinIn />
                             </a>
                             <a
-                                href="https://github.com/muqtasid-rana"
+                                href="https://www.behance.net/hubbaishrana01"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"
-                                aria-label="GitHub"
+                                aria-label="Behance"
                             >
-                                <FaGithub />
+                                <FaBehance />
                             </a>
                             <a
-                                href="https://youtube.com/@muqtasidrana"
+                                href="mailto:hubbaishrana@gmail.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"
-
-                                aria-label="YouTube"
+                                aria-label="Gmail"
                             >
-                                <FaYoutube />
+                                <FaEnvelope />
                             </a>
                         </div>
                     </div>
@@ -104,7 +103,7 @@ const Hero = () => {
                         <div className="video-container">
                             {/* Replace with actual YouTube embed URL */}
                             <iframe
-                                src="https://www.youtube.com/embed/hL84KLX0kaY?si=yzuMtwMjlxTedlqi"
+                                src="https://www.youtube.com/embed/Vn2sa5bBMc8?si=5Qodpl8yfU2kPl0j"
                                 title="YouTube video"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
