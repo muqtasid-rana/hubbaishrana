@@ -254,18 +254,5 @@ export const smallProjects = [
         image: '/assets/mockups/nike.png',
         tags: ['Flutter', 'E-commerce']
     },
-    {
-        id: 'whatsapp',
-        title: 'WhatsApp Clone UI',
-        description: 'A pixel-perfect WhatsApp UI clone with chat list, message view, and status layout.',
-        image: '/assets/mockups/whatsapp.png',
-        tags: ['Flutter', 'UI Clone']
-    },
-    {
-        id: 'taskmate',
-        title: 'TaskMate - Todo App',
-        description: 'An attractive TODO List App using RESTful APIs with CRUD operations.',
-        image: '/assets/mockups/todo.png',
-        tags: ['Flutter', 'REST API']
-    }
+
 ];
